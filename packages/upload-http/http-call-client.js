@@ -99,7 +99,7 @@ httpCall = function(method, url, options, callback) {
       convertToBinary = true;
     } else {
       // if is undefined use an empty string by default
-      xhr.responseType = options.responseType || '';
+      xhr.responseType = options.responseType || "";
     }
 
     for (var k in headers)
