@@ -98,7 +98,8 @@ httpCall = function(method, url, options, callback) {
       xhr.responseType = "arraybuffer";
       convertToBinary = true;
     } else {
-      xhr.responseType = options.responseType;
+      // if is undefined use an empty string by default
+      xhr.responseType = options.responseType || '';
     }
 
     for (var k in headers)
